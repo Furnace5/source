@@ -11,22 +11,6 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: metasploit reverse shell
-      run: sudo apt install cmake
-    - name: gsmigfin epic
-      run: sudo apt install zlib1g-dev
-    - name: met
-      run: sudo apt install build-essential checkinstall zlib1g-dev -y
-    - name: meta
-      run: sudo apt-get install -y libsodium-dev  
-    - name: metaspl
-      run: sudo apt-get install libssl-dev
-    - name: metasploit r
-      run: sudo apt-get install libsqlite3-dev
-    - name: metasploit rever
-      run: sudo apt-get install libasio-dev
-    - name: metasploit reverse sll
-      run: sudo apt-get install libcurl4-openssl-dev
-    - name: metasploit re shell
-      run: sudo apt-get install libsystemd-dev
+      run: cmake build-essential ninja-build checkinstall zlib1g-dev mingw-w64 meson libsodium-dev libssl-dev libasio-dev libsqlite3-dev libcurl4-openssl-dev libsystemd-dev
     - name: run the file
       run: ./build-linux.sh
