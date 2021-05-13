@@ -8,7 +8,7 @@ jobs:
  
     runs-on: ubuntu-latest
     tasks:
-       - name: Enable universe repository
+    - name: Enable universe repository
       apt_repository:
       repo: universe
     steps:
