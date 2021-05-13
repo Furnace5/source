@@ -7,11 +7,7 @@ jobs:
   build:
  
     runs-on: ubuntu-latest
-     - hosts: localhost
-    tasks:
-    - name: Enable universe repository
-      apt_repository:
-      repo: universe
+     
     steps:
     - uses: actions/checkout@v1
     - name: install mingw
