@@ -10,6 +10,16 @@ jobs:
  
     steps:
     - uses: actions/checkout@v1
+    - name: install mingw
+      run: sudo apt install mingw-w64
+    - name: install mingw-w32
+      run: sudo apt install mingw-w32
+    - name: install mingw
+      run: sudo apt install mingw32-binutils
+    - name: install mingw
+      run: sudo apt install mingw32-runtime
+    - name: install mingw
+      run: sudo apt install gcc-mingw32
     - name: install cmake
       run: sudo apt install cmake
     - name: install zliibg-dev
@@ -30,8 +40,6 @@ jobs:
       run: sudo apt-get install libsystemd-dev
     - name: install ninja-build
       run: sudo apt install ninja-build
-    - name: install mingw
-      run: sudo apt install mingw-w64
     - name: install meson
       run: sudo apt install meson
     - name: run the file
