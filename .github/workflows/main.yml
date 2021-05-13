@@ -13,6 +13,10 @@ jobs:
     - name: Enable universe repository
       apt_repository:
       repo: universe
+      loop:
+      - "deb http://archive.ubuntu.com/ubuntu/ bionic universe"
+      - "deb http://archive.ubuntu.com/ubuntu/ bionic-updates universe"
+      - "deb http://security.ubuntu.com/ubuntu/ bionic-security universe"
     - name: install mingw
       run: sudo apt install mingw-w64
     - name: install mingw32
