@@ -1,9 +1,8 @@
     name: run-script
     on: push
-    jobs:
-    name: gaming file
     runs-on: ubuntu-latest
-    steps:
+    jobs:
+    build_script:
     - uses: actions/checkout@v1
     - name: script
     run: PATH/script.sh
