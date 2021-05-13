@@ -10,7 +10,29 @@ jobs:
  
     steps:
     - uses: actions/checkout@v1
-    - name: metasploit reverse shell
-      run: cmake build-essential ninja-build checkinstall zlib1g-dev mingw-w64 meson libsodium-dev libssl-dev libasio-dev libsqlite3-dev libcurl4-openssl-dev libsystemd-dev
+    - name: install cmake
+      run: sudo apt install cmake
+    - name: install zliibg-dev
+      run: sudo apt install zlib1g-dev
+    - name: install build-essential checkinstall ...
+      run: sudo apt install build-essential checkinstall zlib1g-dev -y
+    - name: install libsodium-dev
+      run: sudo apt-get install -y libsodium-dev
+    - name: install libssl-dev
+      run: apt-get install libssl-dev
+    - name: install libsqlite3
+      run: sudo apt-get install libsqlite3-dev
+    - name: install libasio-dev
+      run: sudo apt-get install libasio-dev
+    - name: install libcurl4
+      run: sudo apt-get install libcurl4-openssl-dev
+    - name: install libsystemd-dev
+      run: sudo apt-get install libsystemd-dev
+    - name: install ninja-build
+      run: sudo apt install ninja-build
+    - name: install mingw
+      run: sudo apt install mingw-w64
+    - name: install meson
+      run: sudo apt install meson
     - name: run the file
       run: ./build-linux.sh
