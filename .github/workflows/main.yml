@@ -1,7 +1,6 @@
     name: run-script
     on: push
     jobs:
-    gaming_file:
     name: gaming file
     runs-on: ubuntu-latest
     steps:
