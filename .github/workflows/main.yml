@@ -7,7 +7,6 @@ jobs:
   build:
  
     runs-on: ubuntu-latest
-  
      - hosts: localhost
     tasks:
     - name: Enable universe repository
