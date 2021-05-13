@@ -12,6 +12,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: metasploit reverse shell
       run: sudo apt install cmake
+    - name: gsmigfin epic
       run: sudo apt install zlib1g-dev
     - name: met
       run: sudo apt install build-essential checkinstall zlib1g-dev -y
