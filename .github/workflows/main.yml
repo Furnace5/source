@@ -10,8 +10,8 @@ jobs:
  
     steps:
     - uses: actions/checkout@v1
-     - name: Enable universe repository
-    apt_repository:
+    - name: Enable universe repository
+      apt_repository:
       repo: universe
     - name: install mingw
       run: sudo apt install mingw-w64
