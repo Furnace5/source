@@ -19,7 +19,7 @@ jobs:
     - name: meta
       run: sudo apt-get install -y libsodium-dev  
     - name: metaspl
-      run: apt-get install libssl-dev
+      run: sudo apt-get install libssl-dev
     - name: metasploit r
       run: sudo apt-get install libsqlite3-dev
     - name: metasploit rever
