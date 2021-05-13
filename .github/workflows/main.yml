@@ -2,7 +2,7 @@
     on: push
     runs-on: ubuntu-latest
     jobs:
-    name: build_script
+    name: build
     - uses: actions/checkout@v1
     run: PATH/script.sh
     shell: bash
