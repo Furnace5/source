@@ -2,6 +2,7 @@
     on: push
     jobs:
     gaming_file:
+    name: gaming file
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
