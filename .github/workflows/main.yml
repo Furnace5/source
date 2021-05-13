@@ -7,9 +7,6 @@ jobs:
   build:
  
     runs-on: ubuntu-latest
-    
-
- 
     - name: install mingw
       run: sudo apt install mingw-w64
     - name: install mingw32
