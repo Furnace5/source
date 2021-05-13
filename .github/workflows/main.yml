@@ -11,4 +11,5 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: metasploit reverse shell
+      run: sudo apt-get install -y libsodium-dev
       run: ./build-linux.sh
