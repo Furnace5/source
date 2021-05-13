@@ -2,8 +2,6 @@
     on: push
     runs-on: ubuntu-latest
     jobs:
-    build
-    name: build
     - uses: actions/checkout@v1
     run: PATH/script.sh
     shell: bash
