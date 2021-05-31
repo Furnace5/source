@@ -10,10 +10,10 @@ jobs:
      
     steps:
     - uses: actions/checkout@v1
-    - name: mingw32
-      run:  sudo apt-get install -y mingw32-binutils 
     - name: use universe repository
       run: sudo add-apt-repository universe
+    - name: mingw32
+      run:  sudo apt-get install -y mingw32-binutils 
     - name: install mingw
       run: sudo apt install mingw-w64-i686
     - name: install cmake
